@@ -9,14 +9,14 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button buttonAdicionar;
-    Button buttonRemover;
-    EditText editDescricao;
-    EditText editPrioridade;
-    TextView textPrioridade;
-    TextView textDescricao;
-    TextView textNovaTarefa;
-    ListView listView;
+    private Button buttonAdicionar;
+    private Button buttonRemover;
+    private EditText editDescricao;
+    private EditText editPrioridade;
+    private TextView textPrioridade;
+    private TextView textDescricao;
+    private TextView textNovaTarefa;
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         buttonRemover = (Button)findViewById(R.id.buttonRemover);
         editPrioridade = (EditText)findViewById(R.id.editPrioridade);
         editDescricao = (EditText)findViewById(R.id.editDescricao);
-        
+
+        listView = (ListView)findViewById(R.id.listView);
     }
 }
