@@ -7,7 +7,7 @@
     tools:context="matc89.exercicio3.MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textNovaTarefa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
@@ -20,13 +20,13 @@
         android:layout_marginStart="8dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textDescricao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Descrição"
         android:textSize="14sp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textNovaTarefa"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 
@@ -39,20 +39,20 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="14sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
-        app:layout_constraintLeft_toRightOf="@+id/textView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textDescricao"
+        app:layout_constraintLeft_toRightOf="@+id/textDescricao"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textPrioridade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Prioridade"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textDescricao"
         android:layout_marginStart="8dp" />
 
     <EditText
@@ -63,8 +63,8 @@
         android:ems="10"
         android:inputType="number"
         android:textSize="14sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
-        app:layout_constraintLeft_toRightOf="@+id/textView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textPrioridade"
+        app:layout_constraintLeft_toRightOf="@+id/textDescricao"
         android:layout_marginStart="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent" />
