@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView textDescricao;
     private TextView textNovaTarefa;
     private ListView listView;
-    private ArrayAdapter<Tarefa> listAdapter;
+    private TarefaAdapter tarefaAdapter;
+    //private ArrayAdapter<Tarefa> listAdapter;
     private List<Tarefa> tarefas = new ArrayList<Tarefa>();
 
     @Override
@@ -34,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         editDescricao = (EditText)findViewById(R.id.editDescricao);
 
         listView = (ListView)findViewById(R.id.listView);
-        listAdapter = new ArrayAdapter<Tarefa>(this,android.R.layout.simple_list_item_1,android.R.id.text1,tarefas);
+        tarefaAdapter = new TarefaAdapter(this,tarefas);
         // criar subclasse de ArrayAdapter;
-        listView.setAdapter(listAdapter);
+        listView.setAdapter(tarefaAdapter);
     }
 }
