@@ -3,6 +3,7 @@ package matc89.exercicio3;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.style.TextAppearanceSpan;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -38,5 +39,14 @@ public class MainActivity extends AppCompatActivity {
         tarefaAdapter = new TarefaAdapter(this,tarefas);
         // criar subclasse de ArrayAdapter;
         listView.setAdapter(tarefaAdapter);
+    }
+    public void removerPrimeiro (View v){
+        tarefas.remove(0);
+    }
+    public void adicionar(View v){
+        String descricao = "" + editDescricao.getText();
+        int prioridade = Integer.parseInt(editPrioridade.getText().toString());
+        Tarefa tarefa = new Tarefa(descricao,prioridade);
+        tarefas.add(tarefa);
     }
 }
